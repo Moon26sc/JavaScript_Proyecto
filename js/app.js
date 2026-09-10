@@ -417,6 +417,7 @@ document.addEventListener("DOMContentLoaded", () => {
           document.querySelector("#formLogin").reset();
           [correo, password].forEach(campo => campo.classList.remove("is-valid"));
           mensaje.textContent = "";
+          window.location.href = 'perfil.html';
         }, 900);
       } catch (error) {
         mensaje.textContent = "Revisa los campos marcados en rojo.";
